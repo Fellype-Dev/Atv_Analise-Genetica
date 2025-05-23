@@ -1,0 +1,82 @@
+:root {
+    --dark: #2A2B2A;        /* Preto escuro */
+    --gray: #706C61;        /* Cinza médio */
+    --light: #F8F4E3;       /* Bege claro */
+    --primary: #E5446D;     /* Rosa escuro */
+    --secondary: #FF8966;   /* Laranja claro */
+    --danger: #dc3545;      /* Vermelho para erros */
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dark) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--light) !important;
+}
+
+.nav-link:hover {
+    color: var(--secondary) !important;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: #d13a60;
+    border-color: #d13a60;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #e67a55;
+    border-color: #e67a55;
+    color: white;
+}
+
+/* Cards */
+.card-header {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Alertas */
+.alert-danger {
+    background-color: rgba(229, 68, 109, 0.1);
+    border-color: var(--primary);
+    color: var(--dark);
+}
+
+/* Tabelas */
+.table-dark {
+    background-color: var(--dark);
+}
+
+/* Formulários */
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(229, 68, 109, 0.25);
+}
+
+/* Validação */
+.is-invalid {
+    border-color: var(--danger);
+}
+
+.invalid-feedback {
+    color: var(--danger);
+}
